@@ -1,0 +1,623 @@
+body {
+	font-size:14px;
+	background-color: #FFFFFF;
+	color: #000000;
+	margin: 0px;
+    padding: 0px;
+}
+
+#background-login{
+	background-image: url("img/7000855-nyc-city-lights.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 662px;
+    margin: 0px;
+    padding: 0px;
+    object-fit:cover;
+}
+
+#background-home{
+	background-image: url("img/7000855-nyc-city-lights.jpg");
+    background-repeat: no-repeat;
+   	background-size: 100% 100%;
+   	min-height: 1090px;
+    
+}
+
+#isi-login{
+	margin:0px;
+	padding: 0px;
+	width: 1350px;
+	height: 650px;
+}
+
+.box {
+	border:#666666 solid 1px;
+}
+
+#box-isi{
+	background-color: #FFFFF0;
+	height: 300px;
+	margin: 50px 0px 0px 535px;
+	width: 300px;
+	z-index: 20;
+}
+
+#box-isi-signup{
+	background-color: #FFFFF0;
+	height: 480px;
+	margin: 0px 0px 0px 530px;
+	width: 300px;
+	z-index: 20;
+}
+
+#img-login{
+	height:100%;
+	width:100%;
+	position:absolute;
+	background-size: cover;
+	object-fit: cover;
+}
+
+#title-login{
+	padding: 100px 0px 0px 0px;
+	color:#37a69b;
+	text-align: center;
+	font-family: Copperplate,"Copperplate Gothic Light",fantasy;
+	font-weight: bold;
+}
+
+#title-home{
+	padding: 50px 0px 0px 0px;
+	color:#37a69b;
+	text-align: center;
+	font-family: Copperplate,"Copperplate Gothic Light",fantasy;
+	font-weight: bold;
+}
+
+#title-signup{
+	padding: 10px 0px 0px 0px;
+	color:#37a69b;
+	text-align: center;
+	font-family: Copperplate,"Copperplate Gothic Light",fantasy;
+	font-weight: bold;
+}
+
+.footer{
+	background-color: #FFFFFF;
+	color: #000000;
+	margin: 10px 0px 0px 0px;
+	text-align: center;
+	font-family: "Book Antiqua",Palatino,"Palatino Linotype","Palatino LT STD",Georgia,serif;
+	float: left;
+	z-index: 9999;
+	width:100%;
+	bottom:0px;
+	border-top: 3px solid;
+	border-color: #66FFB2;
+}
+
+.footer-login{
+	/*background-color: #FFFFFF;*/
+	color: #000000;
+	font-weight: bold;
+	margin: 10px 0px 0px 0px;
+	text-align: center;
+	font-family: "Book Antiqua",Palatino,"Palatino Linotype","Palatino LT STD",Georgia,serif;
+	float: left;
+	z-index: 9999;
+	width:100%;
+	bottom:0px;
+	/*border-top: 3px solid;
+	border-color: #66FFB2;*/ 
+	position: fixed;
+}
+
+.footer-signup{
+	color: #000000;
+	font-weight: bold;
+	margin: -45px 0px 0px 0px;
+	text-align: center;
+	font-family: "Book Antiqua",Palatino,"Palatino Linotype","Palatino LT STD",Georgia,serif;
+	float: left;
+	z-index: 9999;
+	width:100%;
+}
+
+.footer-home{
+	color: #000000;
+	font-weight: bold;
+	margin: -45px 0px 0px 0px;
+
+	text-align: center;
+	font-family: "Book Antiqua",Palatino,"Palatino Linotype","Palatino LT STD",Georgia,serif;
+	float: left;
+	z-index: 9999;
+	width:100%;
+}
+
+#slider {
+	height:600px;
+	width:100%;
+	margin: 50px auto;
+	position:relative;
+	border-radius:4px;
+	overflow:hidden;
+
+}
+
+
+#signup{
+	margin: 0px 0px;
+	padding-top: 10px;
+	padding-left: 30px;
+	font-family: Rockwell,"Courier Bold",Courier,Georgia,Times,"Times New Roman",serif;
+}
+
+#keteranganbawah{
+	margin: 0px 0px;
+	padding-top: 10px;
+	padding-left: 130px;
+	padding-bottom: 10px;
+	color:#FF0000;
+	font-family: Rockwell,"Courier Bold",Courier,Georgia,Times,"Times New Roman",serif;
+}
+
+#keterangan a{
+	text-decoration: none;
+	color:#FF0000;
+	margin-left:5px;
+}
+ #signup a, #delete-account a{
+	text-decoration: none;
+	color:#FF0000;
+}
+
+#signup a:hover, #delete-account a:hover{
+	text-decoration: underline;
+}
+
+#signup a:visited, #delete-account a:visited{
+	text-decoration: none;
+}
+
+#delete-account{
+	margin: 0px 0px;
+	padding-top: 10px;
+	padding-left: 150px;
+	font-family: Rockwell,"Courier Bold",Courier,Georgia,Times,"Times New Roman",serif;
+}
+
+
+#error{
+	font-size:12px; 
+	color:#cc0000; 
+	margin: 0px 0px;
+	padding-left: 30px;
+	font-family: Rockwell,"Courier Bold",Courier,Georgia,Times,"Times New Roman",serif;
+}
+
+input[type="password"]
+{
+	border: 1px solid #a1a3a3;
+	border-radius: 4px;
+	box-shadow: 0 1px #fff;
+	box-sizing: border-box;
+	color: #696969;
+	height: 39px;
+	margin: 10px 0 0 29px;
+	padding-left: 37px;
+	transition: box-shadow 0.3s;
+	width: 240px;
+}
+ input[type="text"], input[type="file"] {
+	border: 1px solid #a1a3a3;
+	border-radius: 4px;
+	box-shadow: 0 1px #fff;
+	box-sizing: border-box;
+	color: #696969;
+	height: 39px;
+	margin: 30px 0 0 29px;
+	padding-left: 37px;
+	transition: box-shadow 0.3s;
+	width: 240px;
+}
+
+#box-isi-signup input[type="password"], #box-isi-signup input[type="text"]{
+	margin: 21px 0 0 29px;
+}
+input[type="password"]:focus, input[type="text"]:focus {
+	box-shadow: 0 0 4px 1px rgba(55, 166, 155, 0.3);
+	outline: 0;
+}
+.show-password {
+	display: block;
+	height: 16px;
+	margin: 26px 0 0 28px;
+	width: 87px;
+}
+input[type="checkbox"] {
+	height: 16px;
+	opacity: 1;
+	position: relative;
+	width: 64px;
+}
+/*
+[type="checkbox"]:checked {
+	left: 29px;
+	width: 58px;
+}*/
+.toggle {
+	display: block;
+	height: 16px;
+	margin-top: -20px;
+	width: 87px;
+	z-index: -1;
+}
+input[type="checkbox"]:checked + .toggle { background-position: 0 -16px }
+
+input[type="submit"] {
+	width:240px;
+	height:35px;
+	display:block;
+	font-family:Arial, "Helvetica", sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	color:#fff;
+	text-decoration:none;
+	text-transform:uppercase;
+	text-align:center;
+	text-shadow:1px 1px 0px #37a69b;
+	padding-top:6px;
+	margin: 10px 0 0 29px;
+	position:relative;
+	cursor:pointer;
+	border: none;  
+	background-color: #37a69b;
+	background-image: linear-gradient(top,#3db0a6,#3111);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius:5px;
+	box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #497a78, 0px 10px 5px #999;
+}
+
+#box-isi-signup input[type="submit"] {
+	margin: 19px 0 0 29px;
+}
+
+input[type="submit"]:active {
+	top:3px;
+	box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #31524d, 0px 5px 3px #999;
+}
+
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  background-color: #FFFFFF;
+  border-bottom: 2px solid;
+  border-color: #37a69b;
+}
+
+.fixed-nav-bar ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	background-color: #FFFFFF;
+}
+
+.fixed-nav-bar li{
+	float:right;
+	margin-right: 5px;
+}
+
+.fixed-nav-bar li:nth-child(1) {
+	float: left;
+	margin-left: 50px;
+	margin-top:2px;
+}
+
+.fixed-nav-bar li:nth-child(2) {
+	float: left;
+	margin-top:2px;
+}
+
+.fixed-nav-bar li:nth-child(3) {
+	float: right;
+	margin-top: 3px;
+}
+
+.fixed-nav-bar li:nth-child(4) {
+	float: left;
+}
+
+.fixed-nav-bar li:nth-child(6) {
+	margin-top:3px;
+	float: right;
+}
+
+.fixed-nav-bar li a {
+	display: block;
+	color: #000000;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: Copperplate,"Copperplate Gothic Light",fantasy;
+}
+
+.fixed-nav-bar li a:hover:not(.active) {
+	border-bottom: 3px solid;
+	border-bottom-color: #37a69b;
+}
+
+.fixed-nav-bar .active {
+	border-bottom: 3px solid;
+	color: #37a69b;
+	border-bottom-color: #37a69b;
+}
+
+.fixed-nav-bar #navbar li a{
+	padding-left: 30px;
+}
+
+.fixed-nav-bar li:nth-child(5) {
+	/*background-color: #37a69b;*/
+	border-radius: 4px;
+	margin: 3px 0px 0px 0px;
+	border-bottom: 0px;
+	float : right;
+}
+
+#navbar .nav-bar-home a{
+	background:url("img/home.png") no-repeat 2px 9px transparent; 
+}
+
+
+#navbar .nav-bar-filter a{
+	background:url("img/filter.png") no-repeat 2px 9px transparent; 
+}
+
+#navbar .nav-bar-upload a{
+	background:url("img/upload.png") no-repeat 3px 9px transparent; 
+}
+
+#navbar .nav-bar-logout a{
+	background:url("img/logout.png") no-repeat 3px 9px transparent; 
+}
+
+#navbar .nav-bar-settings a{
+	background:url("img/settings.png") no-repeat 3px 11px transparent; 
+}
+
+#navbar .nav-bar-search input{
+	float:left;
+	height: 30px;
+	margin: 4px 10px 0px 0px;
+	width: 290px;
+}
+#navbar .nav-bar-search input[type="submit"]{
+	width: 40px;
+	height: 30px;
+	color: #000000;
+	background-color:#FFFFFF;
+	box-shadow: none;
+	text-transform: none;
+	font-family: Copperplate,"Copperplate Gothic Light",fantasy;
+	text-shadow:none;
+	font-weight: normal;
+	background:url("img/search.png") no-repeat 2px 6px;
+}
+#navbar .nav-bar-search input[type="text"]{
+	margin-top: 10px;
+}
+#div1{
+	background-color: black;
+	margin: 0px;
+	padding: 0px;
+	z-index: 0;
+}
+.div2{
+	margin-top: 50px;
+	padding-top: 20px;
+	margin-left: 150px;
+}
+.div2 h2{
+	color: #000000;
+	font-family: Copperplate,"Copperplate Gothic Light",fantasy;
+	font-weight: bolder;
+}
+.div2 form{
+	margin-left: 20px;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+
+.div2 input[type="text"], .div2 input[type="password"], .div2 input[type="file"]{
+	margin-left: 130px;
+	padding-left: 20px;
+}
+
+.div2 input[type="submit"]{
+	margin-left: 130px;
+}
+
+#profpic-setting{
+	height: 200px;
+	width: 200px;
+	object-fit: cover;
+	border-radius: 30px;
+	border: 2px solid;
+	border-color: #37a69b;
+}
+
+.label-account{
+	width: 120px;
+	display: inline-block;
+	font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+}
+
+.label-profpict{
+	font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,AppleGothic,sans-serif;	
+}
+
+.div2 .form-profpict{
+	margin-left: 0px;
+	padding: 0px;
+}
+
+.div2 .form-profpict input{
+	float:left;
+}
+
+.form-profpict input[type="submit"]{
+	width: 100px;
+	margin-left: 0px;
+	box-shadow: none;
+}
+.form-profpict input[type="file"]{
+	width: 240px;
+	padding: 0px;
+	margin-left: 0px;
+}
+
+.upload{
+	padding-left:0px;
+}
+
+.div2 .div2-bg{
+	background-color: #adffd6;
+	border-radius: 30px;
+}
+.home{
+	margin: 20px 0px 0px 50px;
+}
+.home-img , .account-img{
+    margin: 10px 0px 0px 10px;
+    padding: 0px;
+    border: 3px solid #37a69b;
+    float: left;
+    width: 400px;
+    height: 410px;
+}	
+
+.home-img img {
+    width: 400px;
+    height: 300px;
+    object-fit:cover;
+    border-bottom: 3px solid #37a69b;
+    float: left;
+}
+
+.account-img img{
+	width: 400px;
+    height: 330px;
+    object-fit:cover;
+    border-bottom: 3px solid #37a69b;
+    float: left;
+}
+
+.home-img .desc , .account-img .desc{
+    padding: 15px;
+    text-align: left;
+  	font-family: Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif;
+}
+.home-img .user {
+    padding: 30px 15px 15px 10px;
+    text-align: left;
+    font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+    font-weight: bolder;
+}
+.download{
+	width:25px;
+	height: 25px;
+	margin-left: 370px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
+}
+.download input[type="submit"]{
+	width: 25px;
+	height: 25px;
+	margin-top: 0px;
+	margin-left: 0px;
+	border-bottom: none;
+	box-shadow: none;
+	background: url("img/download.png") no-repeat transparent;
+	background-color: #FFFFFF;
+}
+
+.editpict{
+	width:40px;
+	height: 40px;
+	margin-left: 350px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
+}
+
+.editpict input[type="submit"]{
+	width: 40px;
+	height: 40px;
+	margin-top: 0px;
+	margin-left: 0px;
+	border-bottom: none;
+	box-shadow: none;
+	background-color: #FFFFFF;
+	color: #37a69b;
+	text-decoration: underline;
+	text-shadow:none;
+	font-size: 12px;
+	text-transform: none;
+	font-family: "Calibri";
+}
+
+.editpict input[type="submit"]:hover{
+	color: #000000;
+}
+
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
+	float: left;
+	margin: 0 3% 0 0;
+}
+
+.col1.last, .col2.last, .col3.last, .col4.last, .col5.last, .col6.last, .col7.last, .col8.last, .col9.last, .col10.last, .col11.last, .col12 {
+	margin: 0;
+}
+
+.col1 { width: 5.5%; }
+.col2 { width: 14%; }
+.col3 { width: 22.5%; }
+.col4 { width: 31%; }
+.col5 { width: 39.5%; }
+.col6 { width: 48%; }
+.col7 { width: 56.5%; }
+.col8 { width: 65%; }
+.col9 { width: 73.5%; }
+.col10 { width: 82%; }
+.col11 { width: 90.5%; }
+.col12 { width: 99%; margin: 0; }
+
+.col1 img, .col2 img, .col3 img, .col4 img, .col5 img, .col6 img, .col7 img, .col8 img, .col9 img, .col10 img, .col11 img, .col12 img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.status{
+	
+	color: #000000;
+	margin: 6px 0px 0px 2px;
+	text-align: left;
+	font-family: "Book Antiqua",Palatino,"Palatino Linotype","Palatino LT STD",Georgia,serif;
+	float: left;
+	z-index: 9999;
+	width:100%;
+	bottom:0px;
+	
+	
+}
