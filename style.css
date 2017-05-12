@@ -190,9 +190,17 @@ body {
 
 
 #error{
-	font-size:12px; 
+	font-size:16px; 
 	color:#cc0000; 
 	margin: 0px 0px;
+	padding-left: 30px;
+	font-family: Rockwell,"Courier Bold",Courier,Georgia,Times,"Times New Roman",serif;
+}
+
+#error2{
+	font-size:14px; 
+	color:#cc0000; 
+	margin: 5px 0 0 0px;
 	padding-left: 30px;
 	font-family: Rockwell,"Courier Bold",Courier,Georgia,Times,"Times New Roman",serif;
 }
@@ -217,7 +225,7 @@ input[type="password"]
 	box-sizing: border-box;
 	color: #696969;
 	height: 39px;
-	margin: 30px 0 0 29px;
+	margin: 15px 0 0 29px;
 	padding-left: 37px;
 	transition: box-shadow 0.3s;
 	width: 240px;
@@ -398,7 +406,7 @@ input[type="submit"]:active {
 	float:left;
 	height: 30px;
 	margin: 4px 10px 0px 0px;
-	width: 290px;
+	width: 420px;
 }
 #navbar .nav-bar-search input[type="submit"]{
 	width: 40px;

@@ -1,7 +1,3 @@
-<?php
-   define('DB_SERVER', 'localhost');
-   define('DB_USERNAME', 'root');
-   define('DB_PASSWORD', '');
-   define('DB_DATABASE', 'pweb2');
-   $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
-?>
+<?php $host = "localhost"; $user = "root"; $pass = ""; $db = "IMK"; $konek = mysql_connect($host, $user, $pass) or die ('Koneksi Gagal! ');
+ mysql_select_db($db);
+ ?>

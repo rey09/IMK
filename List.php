@@ -2,6 +2,10 @@
 include('session.php');
 $mysearchkey="";
 if(isset($_GET['searchkey'])) $mysearchkey = $_GET['searchkey'];
+$sql = "SELECT username FROM barang WHERE username = '$login_session'";
+$result = mysql_query($sql);
+$row = mysql_fetch_array($result,MYSQLI_ASSOC);
+$idmem=$row['username'];
 ?>
 <html>
 <head>
@@ -15,11 +19,11 @@ if(isset($_GET['searchkey'])) $mysearchkey = $_GET['searchkey'];
 	<div id="div1">
 		<nav class="fixed-nav-bar" >
 			<ul id="navbar" >
-				<li class="nav-bar-home"><a href="#top" class="scroll active" >Home</a></li>
+				<li class="nav-bar-home"><a href="home.php" >Home</a></li>
 				<li class="nav-bar-upload"><a href="upload.php">Add Barang</a></li>
 
 				<li class="nav-bar-logout"><a href="logout.php">Log Out</a></li>
-				<li class="nav-bar-logout"><a href="List.php">List Barang</a></li>
+				<li class="nav-bar-logout"><a href="#top" class="scroll active">List Barang</a></li>
 				<li class="nav-bar-settings"><a href="settings.php">Settings</a></li>
 				<li class="nav-bar-filter"><a href="filter.php">Advanced Search</a></li>
 				
@@ -35,13 +39,14 @@ if(isset($_GET['searchkey'])) $mysearchkey = $_GET['searchkey'];
 			</ul>
 		</nav>
 	</div>
-	<div id="title-home"><h1>Items Have Been Found!!!</h1></div>
+	<div id="title-home"><h1>Items You Have Found!!!</h1></div>
 	<div class="home" id="top">
 		<?php
 			
-			if(is_null($mysearchkey)) {$sql = "SELECT * FROM barang ORDER BY id_barang DESC";}
+			if(is_null($mysearchkey)) {$sql = "SELECT * FROM barang where username='$idmem' ORDER BY id_barang DESC";}
 			else {
-				$sql = "SELECT * FROM barang WHERE nama_barang LIKE '%$mysearchkey' ORDER BY id_barang DESC";}
+				$sql = "SELECT * FROM barang WHERE nama_barang LIKE '%$mysearchkey' && username='$idmem' ORDER BY id_barang DESC";}
+			
 			$result = mysql_query($sql);
 			while($row = mysql_fetch_assoc($result)){
 				$rowid = $row['id_barang'];

@@ -1,5 +1,5 @@
 <?php
-//include('session.php');
+include('session.php');
 // $sql = "SELECT ID_member FROM users WHERE username = '$login_session'";
 // $result = mysqli_query($db,$sql);
 // $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
@@ -25,16 +25,17 @@
 				<li class="nav-bar-upload"><a href="#top" class="scroll active">Add Barang</a></li>
 
 				<li class="nav-bar-logout"><a href="logout.php">Log Out</a></li>
+				<li class="nav-bar-logout"><a href="List.php">List Barang</a></li>
+				<li class="nav-bar-settings"><a href="settings.php">Settings</a></li>
+				<li class="nav-bar-filter"><a href="filter.php">Advanced Search</a></li>
+				
 				<li class="nav-bar-search">
 					<form action = "" method = "get">
 						<input type = "text" name = "searchkey" class = "box" placeholder="Search by name"/>
-						<input type = "text" name = "searchkey" class = "box" placeholder="Search by location"/>
 						<input type = "submit" value = ""/>
 					</form>
 				</li>
-
-				<li class="nav-bar-settings"><a href="settings.php">Settings</a></li>
-				<li class="nav-bar-filter"><a href="filter.php">Advanced Search</a></li>
+				
 
 				
 			</ul>
@@ -46,9 +47,10 @@
 		<div class="col6 div2-bg">
 			<form action = "upload-image.php" method = "post" enctype="multipart/form-data">
 				<div id="keterangan"><label class="label-account">Upload Image<a >*</a></label><input type = "file" name = "photo" class = "box upload"/><br><br /></div>
-				<div id="keterangan"><label class="label-account">Nama<a >*</a></label><input type = "text" name = "caption" class = "box"/><br /><br /></div>
-				<div id="keterangan"><label class="label-account">Lokasi<a >*</a></label><input type = "text" name = "caption" class = "box"/><br /><br /></div>
-				<div id="keterangan"><label class="label-account">Keterangan<a >*</a></label><input type = "text" name = "caption" class = "box"/><br /><br /></div>
+				<div id="keterangan"><label class="label-account">Nama<a >*</a></label><input type = "text" name = "nama_barang" class = "box"/><br /><br /></div>
+				<div id="keterangan"><label class="label-account">Lokasi<a >*</a></label><input type = "text" name = "lokasi" class = "box"/><br /><br /></div>
+				<div id="keterangan"><label class="label-account">Keterangan<a >*</a></label><input type = "text" name = "keterangan" class = "box"/><br /><br /></div>
+				<div id="keterangan"><label class="label-account">Status<a >*</a></label><input type = "text" name = "status" class = "box"/><br /><br /></div>
 				<div id="keteranganbawah"> Label yang bertanda * harus diisi</div>
 				<input type = "submit" value = " Upload "/><br />
 				

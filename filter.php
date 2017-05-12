@@ -21,20 +21,21 @@
 	<div id="div1">
 		<nav class="fixed-nav-bar" >
 			<ul id="navbar" >
-				<li class="nav-bar-home"><a href="home.php">Home</a></li>
+				<li class="nav-bar-home"><a href="home.php" >Home</a></li>
 				<li class="nav-bar-upload"><a href="upload.php">Add Barang</a></li>
 
 				<li class="nav-bar-logout"><a href="logout.php">Log Out</a></li>
+				<li class="nav-bar-logout"><a href="List.php">List Barang</a></li>
+				<li class="nav-bar-settings"><a href="settings.php">Settings</a></li>
+				<li class="nav-bar-filter"><a href="#top" class="scroll active" >Advanced Search</a></li>
+				
 				<li class="nav-bar-search">
 					<form action = "" method = "get">
 						<input type = "text" name = "searchkey" class = "box" placeholder="Search by name"/>
-						<input type = "text" name = "searchkey" class = "box" placeholder="Search by location"/>
 						<input type = "submit" value = ""/>
 					</form>
 				</li>
-
-				<li class="nav-bar-settings"><a href="settings.php">Settings</a></li>
-				<li class="nav-bar-filter"><a href="#top" class="scroll active">Advanced Search</a></li>
+				
 
 				
 			</ul>
