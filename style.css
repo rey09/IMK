@@ -17,10 +17,10 @@ body {
 }
 
 #background-home{
-	background-image: url("img/7000855-nyc-city-lights.jpg");
-    background-repeat: no-repeat;
+	/*background-image: url("img/7000855-nyc-city-lights.jpg");*/
+    /*background-repeat: no-repeat;
    	background-size: 100% 100%;
-   	min-height: 1090px;
+   	min-height: 1090px;*/
     
 }
 
@@ -68,11 +68,12 @@ body {
 }
 
 #title-home{
-	padding: 50px 0px 0px 0px;
+	padding: 100px 0px 20px 20px;
 	color:#37a69b;
 	text-align: center;
 	font-family: Copperplate,"Copperplate Gothic Light",fantasy;
 	font-weight: bold;
+	font-size: 20px;
 }
 
 #title-signup{
@@ -308,7 +309,7 @@ input[type="submit"]:active {
   height: 50px;
   background-color: #FFFFFF;
   border-bottom: 2px solid;
-  border-color: #37a69b;
+  border-color: #8de9ff;
 }
 
 .fixed-nav-bar ul {
@@ -316,7 +317,7 @@ input[type="submit"]:active {
 	margin: 0px;
 	padding: 0px;
 	overflow: hidden;
-	background-color: #FFFFFF;
+	background-color: #8de9ff;
 }
 
 .fixed-nav-bar li{
@@ -360,13 +361,13 @@ input[type="submit"]:active {
 
 .fixed-nav-bar li a:hover:not(.active) {
 	border-bottom: 3px solid;
-	border-bottom-color: #37a69b;
+	border-bottom-color: #FFFFFF;
 }
 
 .fixed-nav-bar .active {
 	border-bottom: 3px solid;
 	color: #37a69b;
-	border-bottom-color: #37a69b;
+	border-bottom-color: #FFFFFF;
 }
 
 .fixed-nav-bar #navbar li a{
@@ -383,23 +384,28 @@ input[type="submit"]:active {
 
 #navbar .nav-bar-home a{
 	background:url("img/home.png") no-repeat 2px 9px transparent; 
+	color:#FFFFFF;
 }
 
 
 #navbar .nav-bar-filter a{
 	background:url("img/filter.png") no-repeat 2px 9px transparent; 
+	color:#FFFFFF;
 }
 
 #navbar .nav-bar-upload a{
 	background:url("img/upload.png") no-repeat 3px 9px transparent; 
+	color:#FFFFFF;
 }
 
 #navbar .nav-bar-logout a{
 	background:url("img/logout.png") no-repeat 3px 9px transparent; 
+	color:#FFFFFF;
 }
 
 #navbar .nav-bar-settings a{
 	background:url("img/settings.png") no-repeat 3px 11px transparent; 
+	color:#FFFFFF;
 }
 
 #navbar .nav-bar-search input{
@@ -498,7 +504,7 @@ input[type="submit"]:active {
 }
 
 .div2 .div2-bg{
-	background-color: #adffd6;
+	background-color: #8de9ff;
 	border-radius: 30px;
 }
 .home{
