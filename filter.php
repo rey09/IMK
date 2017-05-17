@@ -46,12 +46,12 @@ include('config.php');
 		<div class="col1"></div>
 		<div class="col2"><h2>Filter Berdasarkan</h2></div>
 		<div class="col6 div2-bg">
-			<form action = "upload-image.php" method = "post" enctype="multipart/form-data">
-				<label class="label-account">Nama Barang</label><input type = "text" name = "caption" class = "box"/><br /><br /><br />
+			<form action = "hasilpencarian.php" method = "post" enctype="multipart/form-data">
+				<label class="label-account">Nama Barang</label><input type = "text" name = "nama_barang" class = "box"/><br /><br /><br />
 				<label class="label-account">Lokasi </label>
 				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-					<select name="Lokasi">
-					<option>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp---- Pilih Lokasi ----&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</option>
+					<select name="lokasi">
+					<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp---- Pilih Lokasi ----&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</option>
 					<?php
 						
 							$sql = "SELECT * FROM barang";
@@ -67,7 +67,7 @@ include('config.php');
 				<label class="label-account">Kategori </label>
 				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 					<select name="kategori">
-					<option>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp---- Pilih Kategori ----&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</option>
+					<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp---- Pilih Kategori ----&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</option>
 					<option> Aksesoris </option>
 					<option> Kunci </option>
 					<option> Handphone </option>
@@ -78,7 +78,7 @@ include('config.php');
 					<option> Lainnya </option>		
 
 					</select><br />
-				<label class="label-account">Status</label><input type = "text" name = "caption" class = "box"/><br /><br /><br />
+				<label class="label-account">Status</label><input type = "text" name = "status" class = "box"/><br /><br /><br />
 				<input type = "submit" value = " Cari "/><br />
 			</form>
 		</div>

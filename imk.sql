@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 12, 2017 at 06:11 PM
+-- Generation Time: May 17, 2017 at 06:19 PM
 -- Server version: 10.1.8-MariaDB
 -- PHP Version: 5.6.14
 
@@ -34,6 +34,7 @@ CREATE TABLE `barang` (
   `keterangan` varchar(30) NOT NULL,
   `status` varchar(30) NOT NULL,
   `images` varchar(30) NOT NULL,
+  `kategori` varchar(40) NOT NULL,
   `flag` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -41,9 +42,12 @@ CREATE TABLE `barang` (
 -- Dumping data for table `barang`
 --
 
-INSERT INTO `barang` (`id_barang`, `username`, `nama_barang`, `lokasi`, `keterangan`, `status`, `images`, `flag`) VALUES
-(9, 'rey', 'Dompet', 'Surabaya', 'silahkan hubungi nomor 0292929', 'belum ditemukan', 'img/upload/upl_9.jpg', 1),
-(10, 'rey', 'handphone', 'lamongan', 'silahkan hubungi nomor 2020200', 'belum ditemukan', 'img/upload/upl_10.jpg', 1);
+INSERT INTO `barang` (`id_barang`, `username`, `nama_barang`, `lokasi`, `keterangan`, `status`, `images`, `kategori`, `flag`) VALUES
+(9, 'rey', 'Dompet', 'Surabaya', 'silahkan hubungi nomor 0292929', 'belum ditemukan', 'img/upload/upl_9.jpg', 'aksesoris', 1),
+(10, 'rey', 'handphone', 'lamongan', 'silahkan hubungi nomor 2020200', 'belum ditemukan', 'img/upload/upl_10.jpg', 'elektronik', 1),
+(16, 'rey', 'tes', 'ssjjs', 'sjjsjs', 'sjsjsjj', 'img/upload/upl_16.jpg', 'Aksesoris', 1),
+(17, 'rey', 'kur"', 'Banyuwangi', 'ksksk', 'sksksk', 'img/upload/upl_17.jpg', 'Aksesoris', 1),
+(18, 'steve', 'steve', 'Bangkalan', 'sjsksk', 'ssksk', 'img/upload/upl_18.jpg', 'Aksesoris', 1);
 
 -- --------------------------------------------------------
 
@@ -65,7 +69,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`username`, `nama`, `email`, `no_telepon`, `password`, `image`) VALUES
-('rey', 'reynaldo', 'reynaldo.johanes13@gmail.com', '089660903131', 'mypassword', 'img/upload/upl_rey.jpg');
+('rey', 'reynaldo', 'reynaldo.johanes13@gmail.com', '089660903131', 'mypassword', 'img/upload/upl_rey.jpg'),
+('steve', 'steve', 'reynaldo@YAHOO.COM', '029292020', 'steve', '');
 
 --
 -- Indexes for dumped tables
@@ -91,7 +96,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `barang`
 --
 ALTER TABLE `barang`
-  MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
