@@ -67,6 +67,12 @@ body {
 	font-weight: bold;
 }
 
+#logo-login{
+	width: 500px;
+	height: 150px;
+	align-items: center;
+}
+
 #title-home{
 	padding: 100px 0px 20px 20px;
 	color:#37a69b;
@@ -361,13 +367,13 @@ input[type="submit"]:active {
 
 .fixed-nav-bar li a:hover:not(.active) {
 	border-bottom: 3px solid;
-	border-bottom-color: #FFFFFF;
+	border-bottom-color: #000000;
 }
 
 .fixed-nav-bar .active {
 	border-bottom: 3px solid;
 	color: #37a69b;
-	border-bottom-color: #FFFFFF;
+	border-bottom-color: #000000;
 }
 
 .fixed-nav-bar #navbar li a{
@@ -384,28 +390,33 @@ input[type="submit"]:active {
 
 #navbar .nav-bar-home a{
 	background:url("img/home.png") no-repeat 2px 9px transparent; 
-	color:#FFFFFF;
+	color: #000000;
+	font-weight: 800;
 }
 
 
 #navbar .nav-bar-filter a{
 	background:url("img/filter.png") no-repeat 2px 9px transparent; 
-	color:#FFFFFF;
+	color: #000000;
+	font-weight: 800;
 }
 
 #navbar .nav-bar-upload a{
-	background:url("img/upload.png") no-repeat 3px 9px transparent; 
-	color:#FFFFFF;
+	background:url("img/upload.png") no-repeat 3px 9px transparent;
+	color: #000000;
+	font-weight: 800;
 }
 
 #navbar .nav-bar-logout a{
 	background:url("img/logout.png") no-repeat 3px 9px transparent; 
-	color:#FFFFFF;
+	color: #000000;
+	font-weight: 800;
 }
 
 #navbar .nav-bar-settings a{
 	background:url("img/settings.png") no-repeat 3px 11px transparent; 
-	color:#FFFFFF;
+	color: #000000;
+	font-weight: 800;
 }
 
 #navbar .nav-bar-search input{

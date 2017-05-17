@@ -41,6 +41,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
 	<div id="background-login">
 		<div id="title-login"><h1>Lost & Found</h1></div>
+		<img id="logo-login" src="icon/logo.png">
 		<div id="box-isi">
 			<div id="error2"><?php echo $error; ?></div>
 			<form action = "" method = "post">
