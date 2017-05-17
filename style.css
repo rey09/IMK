@@ -264,7 +264,10 @@ input[type="password"]
 	transition: box-shadow 0.3s;
 	width: 240px;
 }
-
+#box-update input[type="text"]{
+	margin:0px;
+	width: 250px;
+}
 #box-isi-signup input[type="password"], #box-isi-signup input[type="text"]{
 	margin: 21px 0 0 29px;
 }

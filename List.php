@@ -49,7 +49,7 @@ $idmem=$row['username'];
 			
 			if(is_null($mysearchkey)) {$sql = "SELECT * FROM barang where username='$idmem' ORDER BY id_barang DESC";}
 			else {
-				$sql = "SELECT * FROM barang WHERE nama_barang LIKE '%$mysearchkey' && username='$idmem' ORDER BY id_barang DESC";}
+				$sql = "SELECT * FROM barang WHERE nama_barang LIKE '%$mysearchkey' AND username='$idmem' ORDER BY id_barang DESC";}
 			
 			$result = mysql_query($sql);
 			while($row = mysql_fetch_assoc($result)){
@@ -75,15 +75,21 @@ $idmem=$row['username'];
 				        <img style="width:300px; height:300px;" src="'.$row['images'].'">
 				        </div>
 				        <br>
-				        <p class="col-lg-3">Nama barang</p><p class="col-lg-1">:</p><p>'.$row['nama_barang'].'</p>
-				        <p class="col-lg-3">Lokasi</p><p class="col-lg-1">:</p><p>'.$row['lokasi'].'</p>
-				        <p class="col-lg-3">Keterangan</p><p class="col-lg-1">:</p><p>'.$row['keterangan'].'</p>
-				        <p class="col-lg-3">Kategori</p><p class="col-lg-1">:</p><p>'.$row['kategori'].'</p>
-				        <p class="col-lg-3">Status</p><p class="col-lg-1">:</p><p>'.$row['status'].'</p>
-				        </div>
+				        <form action="updatebarang.php" method="POST">
+				        <p class="col-lg-3">Nama barang</p><p class="col-lg-1">:</p><p id="box-update"><input  type="text"  name = "nama" class="boxupdate" value='.$row['nama_barang'].'></p>
+				        <p class="col-lg-3">Lokasi</p><p class="col-lg-1">:</p><p id="box-update"><input type = "text" name = "lokasi" value='.$row['lokasi'].' ></p>
+				        <p class="col-lg-3">Keterangan</p><p class="col-lg-1">:</p><p id="box-update"><input type = "text" name = "keterangan" value='.$row['keterangan'].'></p>
+				        <p class="col-lg-3">Kategori</p><p class="col-lg-1">:</p><p id="box-update"><input type = "text" name = "kategori" value='.$row['kategori'].'></p>
+				        <p class="col-lg-3">Status</p><p class="col-lg-1">:</p><p id="box-update"><input type = "text" name = "status" value='.$row['status'].'></p>
 				        <div class="modal-footer">
+				        	
+				          <input type="button" value="Update" class="btn btn-success">
 				          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				        </div>
+				        </form>
+				        </div>
+				        
+				        
 				      </div>
 				      
 				    </div>
@@ -95,7 +101,7 @@ $idmem=$row['username'];
 	</div>
 
 	<footer>
-		<div class="footer-home2">
+		<div class="footer-home">
 			<p>Copyright &copy; 2017 IMK B</p>
 		</div>
 	</footer>
