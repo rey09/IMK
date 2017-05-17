@@ -64,7 +64,7 @@ if(isset($_GET['searchkey'])) $mysearchkey = $_GET['searchkey'];
 
 	<footer>
 		<div class="footer-home" style="margin-top:45px">
-			<center>
+			<center>y
 			<b>
 			<p><br><br>Copyright &copy; 2017 IMK B</p>
 			</b>
