@@ -1,5 +1,5 @@
 <?php
-//include('session.php');
+include('config.php');
 // $sql = "SELECT ID_member FROM users WHERE username = '$login_session'";
 // $result = mysqli_query($db,$sql);
 // $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
@@ -13,7 +13,7 @@
 <html>
 <head>
 	<title>Filter</title>
-	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="bootstrap.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
@@ -47,19 +47,25 @@
 		<div class="col2"><h2>Filter Berdasarkan</h2></div>
 		<div class="col6 div2-bg">
 			<form action = "upload-image.php" method = "post" enctype="multipart/form-data">
-				<label class="label-account">Nama Barang</label><input type = "text" name = "caption" class = "box"/><br /><br /><br />
+				<label class="label-account">Nama Barang</label><input type = "text" name = "nama_barang" class = "box"/><br /><br /><br />
 				<label class="label-account">Lokasi </label>
 				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 					<select name="Lokasi">
 					<option>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp---- Pilih Lokasi ----&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</option>
-					<option>Surabaya</option>
-					<option>Sidoarjo</option>
-					<option>Madura</option>
-					<option>Malang</option>
-					<option>Mojokerto</option>
+					<?php
+						
+							$sql = "SELECT * FROM barang";
+							$result = mysql_query($sql);
+							while($row = mysql_fetch_assoc($result)){
+								$rowid = $row['id_barang'];
+
+								echo '<option> '.$row['lokasi'].' </option>';
+							}
+					?>	
+
 					</select><br />
-				<label class="label-account">Keterangan</label><input type = "text" name = "caption" class = "box"/><br />
-				<label class="label-account">Status</label><input type = "text" name = "caption" class = "box"/><br />
+				
+				<label class="label-account">Status</label><input type = "text" name = "status" class = "box"/><br /><br /><br />
 				<input type = "submit" value = " Cari "/><br />
 			</form>
 		</div>

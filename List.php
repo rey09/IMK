@@ -59,6 +59,7 @@ $idmem=$row['username'];
   						<div >'.$row['nama_barang'].'</div>
   						<div >'.$row['lokasi'].'</div>
   						<div >'.$row['keterangan'].'</div>
+  						<div >'.$row['kategori'].'</div>
   						<div >'.$row['status'].'</div>
   						
 					</div>';

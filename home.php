@@ -54,6 +54,7 @@ if(isset($_GET['searchkey'])) $mysearchkey = $_GET['searchkey'];
   						<div >'.$row['nama_barang'].'</div>
   						<div >'.$row['lokasi'].'</div>
   						<div >'.$row['keterangan'].'</div>
+  						<div >'.$row['kategori'].'</div>
   						<div >'.$row['status'].'</div>
   						
 					</div>';
@@ -64,7 +65,7 @@ if(isset($_GET['searchkey'])) $mysearchkey = $_GET['searchkey'];
 
 	<footer>
 		<div class="footer-home" style="margin-top:45px">
-			<center>
+			<center>y
 			<b>
 			<p><br><br>Copyright &copy; 2017 IMK B</p>
 			</b>
