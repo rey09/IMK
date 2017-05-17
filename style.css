@@ -391,32 +391,38 @@ input[type="submit"]:active {
 }
 
 #navbar .nav-bar-home a{
-	background:url("img/home.png") no-repeat 2px 9px transparent; 
+	background:url("icon/home2.png") no-repeat 2px 9px transparent; 
 	color: #000000;
 	font-weight: 800;
 }
 
 
 #navbar .nav-bar-filter a{
-	background:url("img/filter.png") no-repeat 2px 9px transparent; 
+	background:url("icon/filter2.png") no-repeat 2px 9px transparent; 
 	color: #000000;
 	font-weight: 800;
 }
 
 #navbar .nav-bar-upload a{
-	background:url("img/upload.png") no-repeat 3px 9px transparent;
+	background:url("icon/add2.png") no-repeat 3px 9px transparent;
+	color: #000000;
+	font-weight: 800;
+}
+
+#navbar .nav-bar-list a{
+	background:url("icon/list2.png") no-repeat 3px 9px transparent;
 	color: #000000;
 	font-weight: 800;
 }
 
 #navbar .nav-bar-logout a{
-	background:url("img/logout.png") no-repeat 3px 9px transparent; 
+	background:url("icon/logout2.png") no-repeat 3px 9px transparent; 
 	color: #000000;
 	font-weight: 800;
 }
 
 #navbar .nav-bar-settings a{
-	background:url("img/settings.png") no-repeat 3px 11px transparent; 
+	background:url("icon/setting2.png") no-repeat 3px 11px transparent; 
 	color: #000000;
 	font-weight: 800;
 }
@@ -437,7 +443,7 @@ input[type="submit"]:active {
 	font-family: Copperplate,"Copperplate Gothic Light",fantasy;
 	text-shadow:none;
 	font-weight: normal;
-	background:url("img/search.png") no-repeat 2px 6px;
+	background:url("icon/search2.png") no-repeat 2px 6px;
 }
 #navbar .nav-bar-search input[type="text"]{
 	margin-top: 10px;
