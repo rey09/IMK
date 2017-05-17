@@ -45,10 +45,21 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 </head>
-<body>
-	<div id="background-login">
-		<div id="title-signup"><h1>Silahkan Daftar Dahulu</h1></div>
-		<div id="box-isi-signup">
+
+<body id="background-login">
+		<div class="container">
+		<div class="row">
+  		<div class="span4"></div>
+  		<div class="span4"><div id="title-signup"><h1>Silahkan Daftar Dahulu</h1></div></div>
+  		<div class="span4"></div>
+		</div>
+		</div>
+
+		<div class="container">
+		<div class="row">
+  		<div class="span4"></div>
+  		<div class="span4">
+  		<div id="box-isi-signup">
 			<div id="error"><?php echo $error; ?></div>
 			<form action = "" method = "post">
 				<input type = "text" name = "nama" class = "box" placeholder="Nama"/><br />
@@ -59,10 +70,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 				<input type = "password" name = "rpassword" class = "box" placeholder="Repeat Password" /><br/>
 				<input type = "submit" value = " Sign Up "/><br />
 				<div id="signup">Sudah punya akun? <a href="login.php">Silahkan login</a></div>
-			</form>
-			
+			</form>			
 		</div>
-	</div>
+  		</div>
+  		<div class="span4"></div>
+		</div>
+		</div>
+		
+		
 	<footer>
 		<div class="footer-signup">
 			<p>Copyright &copy; 2017 IMK B</p>

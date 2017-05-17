@@ -47,10 +47,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
   		<div class="span4"><img class="center-block" id="logo-login" src="icon/logo.png" /></div>
   		<div class="span4"></div>
 		</div>
+		</div>
+
+		<div class="container">
 		<!-- <img id="logo-login" src="icon/logo.png"> -->
 		<div class="row">
   		<div class="span4"></div>
-		<div class="span4" id="box-isi">
+		<div class="span4">
+		<div id="box-isi">
 			<div id="error2"><?php echo $error; ?></div>
 			<form action = "" method = "post">
 				<input type = "text" name = "username" class = "box" placeholder="Username"/><br /><br />
@@ -60,15 +64,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 				<div id="signup">Not register yet? <a href="signup.php">Sign Up here</a></div>
 				<div id="signup">Forgot your password? <a href="signup.php">Here</a></div>
 			</form>
-			
+		</div>		
 		</div>
 		<div class="span4"></div>
 		</div>
-	</div>
+		</div>
+
+	<div class="container">
 	<footer>
 		<div class="footer-signup">
 			<p>Copyright &copy; 2017 IMK B</p>
 		</div>
 	</footer>
+	</div>
+
 </body>
 </html>
