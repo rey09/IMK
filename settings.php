@@ -90,9 +90,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 				<label class="label-account">Nomor Telepon</label><input type = "text" name = "no_telepon" class = "box" value="<?php echo $no_telepon?>"/><br /><br />
 				<label class="label-account">Username</label><input type = "text" name = "username" class = "box" value="<?php echo $login_session?>"/><br /><br />
 				<label class="label-account">Password</label><input type = "password" name = "password" class = "box" placeholder="Password" /><br/><br />
-				<label class="label-account">Repeat Password</label><input type = "password" name = "rpassword" class = "box" placeholder="Repeat Password" /><br/><br />
-				<input type = "submit" value = " Save "/><br />
-				<div id="delete-account">Getting tired? <a href="deleteaccount.php">Delete Account</a></div>
+				<label class="label-account">Repeat Password</label><input type = "password" name = "rpassword" class = "box" placeholder="Repeat Password" /><br/><br /><br>
+				<input type = "submit" value = " Save "/><br /> <br>
+<!-- 				<div id="delete-account">Getting tired? <a href="deleteaccount.php">Delete Account</a></div> -->
 			</form>
 			
 		</div>

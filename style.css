@@ -38,7 +38,8 @@ body {
 
 #box-isi{
 	background-color: #FFFFF0;
-	height: 300px;
+	height: 350px;
+	padding-top: 20px;
 	margin: 50px 0px 0px 430px;
 	width: 300px;
 	z-index: 20;
@@ -533,7 +534,7 @@ input[type="submit"]:active {
 .home-img , .account-img{
     margin: 10px 0px 0px 10px;
     padding: 0px;
-    border: 3px solid #37a69b;
+    border: 0px solid #37a69b;
     float: left;
     width: 400px;
     height: 410px;
@@ -654,4 +655,8 @@ input[type="submit"]:active {
 	bottom:0px;
 	
 	
+}
+
+.modal {
+	margin-top: 75px;
 }
