@@ -85,7 +85,7 @@ include('config.php');
 		<div class="col3"></div>
 	</div>
 	<footer>
-		<div class="footer-login">
+		<div class="footer-home2">
 			<p>Copyright &copy; 2017 IMK B</p>
 		</div>
 	</footer>

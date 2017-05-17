@@ -114,12 +114,8 @@ if(isset($_GET['searchkey'])) $mysearchkey = $_GET['searchkey'];
 	</div>
 
 	<footer>
-		<div class="footer-home" style="margin-top:45px">
-			<center>y
-			<b>
-			<p><br><br>Copyright &copy; 2017 IMK B</p>
-			</b>
-			</center>
+		<div class="footer-home">
+			<p>Copyright &copy; 2017 IMK B</p>
 		</div>
 	</footer>
 </div>

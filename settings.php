@@ -107,7 +107,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 		</div>
 	</div>
 	<footer>
-		<div class="footer">
+		<div class="footer-home2">
 			<p>Copyright &copy; 2017 IMK B</p>
 		</div>
 	</footer>

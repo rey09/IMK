@@ -54,15 +54,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 		<div class="row">
   		<div class="span4"></div>
 		<div class="span4">
-		<div id="box-isi">
+		<div id="box-isi"><div id="signup" style="font-size: 24px">Login</div>
 			<div id="error2"><?php echo $error; ?></div>
 			<form action = "" method = "post">
 				<input type = "text" name = "username" class = "box" placeholder="Username"/><br /><br />
 				<input type = "password" name = "password" class = "box" placeholder="Password" /><br/><br />
 				<input type = "submit" value = " Login "/><br />
 				<input type = "checkbox" name="remem" value= "remember" class = "box">Remember Me<br>
-				<div id="signup">Not register yet? <a href="signup.php">Sign Up here</a></div>
-				<div id="signup">Forgot your password? <a href="signup.php">Here</a></div>
+				<div id="signup">Belum punya akun? <a href="signup.php">Daftar dahulu</a></div>
+				<!-- <div id="signup">Forgot your password? <a href="signup.php">Here</a></div> -->
 			</form>
 		</div>		
 		</div>
@@ -70,13 +70,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 		</div>
 		</div>
 
-	<div class="container">
 	<footer>
-		<div class="footer-signup">
+		<div class="footer-login">
 			<p>Copyright &copy; 2017 IMK B</p>
 		</div>
 	</footer>
-	</div>
 
 </body>
 </html>

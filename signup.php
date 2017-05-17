@@ -50,16 +50,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 		<div class="container">
 		<div class="row">
   		<div class="span4"></div>
-  		<div class="span4"><div id="title-signup"><h1>Silahkan Daftar Dahulu</h1></div></div>
+  		<div class="span4"><img class="center-block" id="logo-login" src="icon/logo.png" /></div>
   		<div class="span4"></div>
 		</div>
-		</div>
+		</div>	
 
 		<div class="container">
 		<div class="row">
   		<div class="span4"></div>
   		<div class="span4">
-  		<div id="box-isi-signup">
+  		<div id="box-isi-signup"><div id="signup" style="font-size: 24px">Register</div>
 			<div id="error"><?php echo $error; ?></div>
 			<form action = "" method = "post">
 				<input type = "text" name = "nama" class = "box" placeholder="Nama"/><br />

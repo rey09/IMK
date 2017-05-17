@@ -38,7 +38,7 @@ body {
 
 #box-isi{
 	background-color: #FFFFF0;
-	height: 350px;
+	height: 375px;
 	padding-top: 20px;
 	margin: 50px 0px 0px 430px;
 	width: 300px;
@@ -47,7 +47,7 @@ body {
 
 #box-isi-signup{
 	background-color: #FFFFF0;
-	height: 500px;
+	height: 550px;
 	margin: 50px 0px 0px 430px;
 	width: 300px;
 	z-index: 20;
@@ -108,42 +108,67 @@ body {
 }
 
 .footer-login{
-	/*background-color: #FFFFFF;*/
-	color: #000000;
+	position: absolute;
 	font-weight: bold;
-	margin: 10px 0px 0px 0px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	font-size: 16px;
+	padding: 0.5rem;
+	background-color: #FFFFF0;
 	text-align: center;
-	font-family: "Book Antiqua",Palatino,"Palatino Linotype","Palatino LT STD",Georgia,serif;
-	float: left;
-	z-index: 9999;
-	width:100%;
-	bottom:0px;
-	/*border-top: 3px solid;
-	border-color: #66FFB2;*/ 
-	position: fixed;
 }
 
 .footer-signup{
-	color: #000000;
+	/*color: #000000;
 	font-weight: bold;
-	margin: 120px 0px 0px 0px;
+	margin: 50px 0px 0px 0px;
 	text-align: center;
-	font-family: "Book Antiqua",Palatino,"Palatino Linotype","Palatino LT STD",Georgia,serif;
 	float: left;
 	z-index: 9999;
-	width:100%;
+	width:100%;*/
+
+	position: relative;
+	font-weight: bold;
+	margin: 50px 0px 0px 0px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	font-size: 16px;	
+	padding: 0.5rem;
+	background-color: #FFFFF0;
+	text-align: center;
 }
 
 .footer-home{
-	color: #000000;
+	position: relative;
 	font-weight: bold;
-	margin: -45px 0px 0px 0px;
-
+	color: #000000;
+	background-color: #8de9ff;
+	width: 100%;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	font-size: 16px;
+	padding: 0.5rem;
 	text-align: center;
-	font-family: "Book Antiqua",Palatino,"Palatino Linotype","Palatino LT STD",Georgia,serif;
 	float: left;
 	z-index: 9999;
-	width:100%;
+}
+
+.footer-home2{
+	position: absolute;
+	color: #000000;
+	background-color: #8de9ff;
+	font-weight: bold;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	font-size: 16px;
+	padding: 0.5rem;
+	text-align: center;
+	float: left;
+	z-index: 9999;
 }
 
 #slider {
@@ -153,7 +178,6 @@ body {
 	position:relative;
 	border-radius:4px;
 	overflow:hidden;
-
 }
 
 
