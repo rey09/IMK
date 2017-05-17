@@ -48,13 +48,35 @@ include('session.php');
 		<div class="col6 div2-bg">
 			<form action = "upload-image.php" method = "post" enctype="multipart/form-data">
 				<div id="keterangan"><label class="label-account">Upload Image<a >*</a></label><input type = "file" name = "photo" class = "box upload"/><br><br /></div>
-				<div id="keterangan"><label class="label-account">Nama<a >*</a></label><input type = "text" name = "nama_barang" class = "box"/><br /><br /></div>
-				<div id="keterangan"><label class="label-account">Lokasi<a >*</a></label><input type = "text" name = "lokasi" class = "box"/><br /><br /></div>
+				<div id="keterangan"><label class="label-account">Nama<a >*</a></label><input type = "text" name = "nama_barang" class = "box"/><br /><br /><br /></div>
+				<div id="keterangan"><label class="label-account">Lokasi<a >*</a></label>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<select name="lokasi">
+					
+					<option>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp---- Pilih Lokasi ----&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</option>
+					<option> Bangkalan </option>
+					<option> Banyuwangi </option>
+					<option> Blitar </option>
+					<option> Bojonegoro </option>	
+					<option> Gresik </option>
+					<option> Jombang </option>
+					<option> Kediri </option>
+					<option> Lamongan </option>	
+					<option> Malang </option>
+					<option> Mojokerto </option>
+					<option> Nganjuk </option>
+					<option> Pasuruan </option>	
+					<option> Sidoarjo </option>
+					<option> Surabaya </option>
+					<option> Tulungagung </option>
+							
+
+					</select><br /><br /><br /></div>
 				<div id="keterangan"><label class="label-account">Kategori<a >*</a></label>
 					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 					<select name="kategori">
 					
-					<option>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp---- Pilih Lokasi ----&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</option>
+					<option>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp---- Pilih Kategori ----&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</option>
 					<option> Aksesoris </option>
 					<option> Kunci </option>
 					<option> Handphone </option>
@@ -64,7 +86,7 @@ include('session.php');
 					<option> Sepatu </option>
 					<option> Lainnya </option>		
 
-					</select><br /></div>
+					</select><br /><br /></div>
 				<div id="keterangan"><label class="label-account">Keterangan<a >*</a></label><input type = "text" name = "keterangan" class = "box"/><br /><br /></div>
 				<div id="keterangan"><label class="label-account">Status<a >*</a></label><input type = "text" name = "status" class = "box"/><br /><br /></div>
 				<div id="keteranganbawah"> Label yang bertanda * harus diisi</div>
