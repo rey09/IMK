@@ -77,8 +77,8 @@ include('config.php');
 					<option> Sepatu </option>
 					<option> Lainnya </option>		
 
-					</select><br />
-				<label class="label-account">Status</label><input type = "text" name = "status" class = "box"/><br /><br /><br />
+					</select><br /><br><br><br><br>
+				<br /><br />
 				<input type = "submit" value = " Cari "/><br />
 			</form>
 		</div>
