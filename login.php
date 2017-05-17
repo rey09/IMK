@@ -38,11 +38,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 </head>
-<body>
-	<div id="background-login">
-		<div id="title-login"><h1>Lost & Found</h1></div>
-		<img id="logo-login" src="icon/logo.png">
-		<div id="box-isi">
+<body id="background-login">
+	
+		<!-- <div id="title-login"><h1>Lost & Found</h1></div> -->
+		<div class="container">
+		<div class="row">
+  		<div class="span4"></div>
+  		<div class="span4"><img class="center-block" id="logo-login" src="icon/logo.png" /></div>
+  		<div class="span4"></div>
+		</div>
+		<!-- <img id="logo-login" src="icon/logo.png"> -->
+		<div class="row">
+  		<div class="span4"></div>
+		<div class="span4" id="box-isi">
 			<div id="error2"><?php echo $error; ?></div>
 			<form action = "" method = "post">
 				<input type = "text" name = "username" class = "box" placeholder="Username"/><br /><br />
@@ -53,6 +61,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 				<div id="signup">Forgot your password? <a href="signup.php">Here</a></div>
 			</form>
 			
+		</div>
+		<div class="span4"></div>
 		</div>
 	</div>
 	<footer>

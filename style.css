@@ -7,13 +7,14 @@ body {
 }
 
 #background-login{
-	background-image: url("img/7000855-nyc-city-lights.jpg");
+	background-color: #8de9ff;
+	/*background-image: url("img/7000855-nyc-city-lights.jpg");
     background-repeat: no-repeat;
     width: 100%;
     height: 662px;
     margin: 0px;
     padding: 0px;
-    object-fit:cover;
+    object-fit:cover;*/
 }
 
 #background-home{
@@ -38,7 +39,7 @@ body {
 #box-isi{
 	background-color: #FFFFF0;
 	height: 300px;
-	margin: 50px 0px 0px 535px;
+	margin: 50px 0px 0px 430px;
 	width: 300px;
 	z-index: 20;
 }
@@ -68,7 +69,8 @@ body {
 }
 
 #logo-login{
-	width: 500px;
+	margin-top: 50px;
+	width: 600px;
 	height: 150px;
 	align-items: center;
 }
@@ -123,7 +125,7 @@ body {
 .footer-signup{
 	color: #000000;
 	font-weight: bold;
-	margin: -45px 0px 0px 0px;
+	margin: 120px 0px 0px 0px;
 	text-align: center;
 	font-family: "Book Antiqua",Palatino,"Palatino Linotype","Palatino LT STD",Georgia,serif;
 	float: left;
