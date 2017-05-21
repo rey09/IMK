@@ -27,7 +27,7 @@ $idmem=$row['username'];
 				<li class="nav-bar-upload"><a href="upload.php">Add Barang</a></li>
 
 				<li class="nav-bar-logout"><a href="logout.php">Log Out</a></li>
-				<li class="nav-bar-logout"><a href="#top" class="scroll active">List Barang</a></li>
+				<li class="nav-bar-list"><a href="#top" class="scroll active">List Barang</a></li>
 				<li class="nav-bar-settings"><a href="settings.php">Settings</a></li>
 				<li class="nav-bar-filter"><a href="filter.php">Advanced Search</a></li>
 				
@@ -43,7 +43,7 @@ $idmem=$row['username'];
 			</ul>
 		</nav>
 	</div>
-	<div id="title-home"><h1>Items You Have Found!!!</h1></div>
+	<div id="title-home"><h1>Items You Have Found!!!<br><br></h1></div>
 	<div class="home" id="top">
 		<?php
 			
@@ -66,13 +66,9 @@ $idmem=$row['username'];
 				    
 				      <!-- Modal content-->
 				      <div class="modal-content">
-				        <div class="modal-header">
-				          <button type="button" class="close" data-dismiss="modal">&times;</button>
-				          <h4 class="modal-title">'.$row['nama_barang'].'</h4>
-				        </div>
 				        <div class="modal-body">
 				        <div align="center">
-				        <img style="width:300px; height:300px;" src="'.$row['images'].'">
+				        <img style="width:400px; height:300px;" src="'.$row['images'].'">
 				        </div>
 				        <br>
 				        <form action="updatebarang.php" method="POST">
@@ -82,8 +78,8 @@ $idmem=$row['username'];
 				        <p class="col-lg-3">Kategori</p><p class="col-lg-1">:</p><p id="box-update"><input type = "text" name = "kategori" value='.$row['kategori'].'></p>
 				        <p class="col-lg-3">Status</p><p class="col-lg-1">:</p><p id="box-update"><input type = "text" name = "status" value='.$row['status'].'></p>
 				        <div class="modal-footer">
-				        	
-				          <input type="button" value="Update" class="btn btn-success">
+				          <a href="list.php">
+				          <input type="button" value="Update" class="btn btn-success"></a>
 				          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				        </div>
 				        </form>
@@ -101,7 +97,7 @@ $idmem=$row['username'];
 	</div>
 
 	<footer>
-		<div class="footer-home">
+		<div class="footer-home2">
 			<p>Copyright &copy; 2017 IMK B</p>
 		</div>
 	</footer>

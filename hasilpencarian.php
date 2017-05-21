@@ -48,7 +48,7 @@ $idmem=$row['username'];
 			</ul>
 		</nav>
 	</div>
-	<div id="title-home"><h1>Items Have Been Found!!!</h1></div>
+	<div id="title-home"><h1>Items Have Been Found!!!</h1></div><br><br>
 	<div class="home" id="top">
 		<?php
 			
@@ -99,10 +99,10 @@ $idmem=$row['username'];
 	</div>
 
 	<footer>
-		<div class="footer-home" style="margin-top:45px">
+		<div class="footer-home" style="margin-top:85px">
 			<center>
 			<b>
-			<p><br><br>Copyright &copy; 2017 IMK B</p>
+			<p>Copyright &copy; 2017 IMK B</p>
 			</b>
 			</center>
 		</div>

@@ -62,7 +62,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 				<li class="nav-bar-upload"><a href="upload.php">Add Barang</a></li>
 
 				<li class="nav-bar-logout"><a href="logout.php">Log Out</a></li>
-				<li class="nav-bar-logout"><a href="List.php">List Barang</a></li>
+				<li class="nav-bar-list"><a href="List.php">List Barang</a></li>
 				<li class="nav-bar-settings"><a href="#top" class="scroll active" >Settings</a></li>
 				<li class="nav-bar-filter"><a href="filter.php">Advanced Search</a></li>
 				
@@ -107,7 +107,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 		</div>
 	</div>
 	<footer>
-		<div class="footer-home2">
+		<div class="footer-home" style="margin-top: 45px;">
 			<p>Copyright &copy; 2017 IMK B</p>
 		</div>
 	</footer>

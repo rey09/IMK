@@ -26,7 +26,7 @@ include('session.php');
 				<li class="nav-bar-upload"><a href="#top" class="scroll active">Add Barang</a></li>
 
 				<li class="nav-bar-logout"><a href="logout.php">Log Out</a></li>
-				<li class="nav-bar-logout"><a href="List.php">List Barang</a></li>
+				<li class="nav-bar-list"><a href="List.php">List Barang</a></li>
 				<li class="nav-bar-settings"><a href="settings.php">Settings</a></li>
 				<li class="nav-bar-filter"><a href="filter.php">Advanced Search</a></li>
 				
@@ -88,7 +88,14 @@ include('session.php');
 
 					</select><br /><br /></div>
 				<div id="keterangan"><label class="label-account">Keterangan<a >*</a></label><input type = "text" name = "keterangan" class = "box"/><br /><br /></div>
-				<div id="keterangan"><label class="label-account">Status<a >*</a></label><input type = "text" name = "status" class = "box"/><br /><br /></div>
+				<div id="keterangan"><label class="label-account">Status<a >*</a></label>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<select name="status">
+					
+					<option>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp---- Pilih Status ----&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</option>
+					<option> Belum Dikembalikan </option>
+					<option> Sudah Dikembalikan </option>
+					</select><br /><br /></div>
 				<div id="keteranganbawah"> Label yang bertanda * harus diisi</div>
 				<input type = "submit" value = " Upload "/><br />
 				

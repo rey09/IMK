@@ -39,7 +39,7 @@ if(isset($_GET['searchkey'])) $mysearchkey = $_GET['searchkey'];
 			</ul>
 		</nav>
 	</div>
-	<div id="title-home"><h1>Items Have Been Found!!!</h1></div>
+	<div id="title-home"><h1>Items Have Been Found!!!<br><br></h1></div>
 
   <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 
@@ -84,13 +84,9 @@ if(isset($_GET['searchkey'])) $mysearchkey = $_GET['searchkey'];
 				    
 				      <!-- Modal content-->
 				      <div class="modal-content">
-				        <div class="modal-header">
-				          <button type="button" class="close" data-dismiss="modal">&times;</button>
-				          <h4 class="modal-title">'.$row['nama_barang'].'</h4>
-				        </div>
 				        <div class="modal-body">
 				        <div align="center">
-				        <img style="width:300px; height:300px;" src="'.$row['images'].'">
+				        <img style="width:400px; height:300px;" src="'.$row['images'].'">
 				        </div>
 				        <br>
 				        <p class="col-lg-3">Nama barang</p><p class="col-lg-1">:</p><p>'.$row['nama_barang'].'</p>
@@ -114,7 +110,7 @@ if(isset($_GET['searchkey'])) $mysearchkey = $_GET['searchkey'];
 	</div>
 
 	<footer>
-		<div class="footer-home">
+		<div class="footer-home" style="margin-top:85px">
 			<p>Copyright &copy; 2017 IMK B</p>
 		</div>
 	</footer>

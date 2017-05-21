@@ -39,7 +39,7 @@ if(isset($_GET['searchkey'])) $mysearchkey = $_GET['searchkey'];
 			</ul>
 		</nav>
 	</div>
-	<div id="title-home"><h1>Items Have Been Found!!!</h1></div>
+	<div id="title-home"><h1>Items Have Been Found!!!<br><br></h1></div>
 	<div class="home" id="top">
 		<?php
 			
@@ -62,10 +62,6 @@ if(isset($_GET['searchkey'])) $mysearchkey = $_GET['searchkey'];
 				    
 				      <!-- Modal content-->
 				      <div class="modal-content">
-				        <div class="modal-header">
-				          <button type="button" class="close" data-dismiss="modal">&times;</button>
-				          <h4 class="modal-title">'.$row['nama_barang'].'</h4>
-				        </div>
 				        <div class="modal-body">
 				        <div align="center">
 				        <img style="width:300px; height:300px;" src="'.$row['images'].'">
@@ -91,10 +87,10 @@ if(isset($_GET['searchkey'])) $mysearchkey = $_GET['searchkey'];
 	</div>
 
 	<footer>
-		<div class="footer-home" style="margin-top:45px">
+		<div class="footer-home" style="margin-top:80px">
 			<center>
 			<b>
-			<p><br><br>Copyright &copy; 2017 IMK B</p>
+			<p>Copyright &copy; 2017 IMK B</p>
 			</b>
 			</center>
 		</div>

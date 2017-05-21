@@ -77,8 +77,17 @@ include('config.php');
 					<option> Sepatu </option>
 					<option> Lainnya </option>		
 
-					</select><br /><br><br><br><br>
-				<br /><br />
+					</select><br />
+				<br />
+				<label class="label-account">Status </label>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<select name="Status">
+					<option value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp---- Pilih Status ----&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</option>
+					<option> Belum Dikembalikan </option>
+					<option> Sudah Dikembalikan </option>
+							
+
+					</select><br /><br><br>
 				<input type = "submit" value = " Cari "/><br />
 			</form>
 		</div>
